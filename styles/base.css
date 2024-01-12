@@ -1,0 +1,106 @@
+/* font-family: 'Quicksand', sans-serif;*/
+/* base.css */
+
+/* default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    /* Default text color */
+    background-color: #f5f5f5;
+    /* Default background color */
+}
+
+/* Center the main content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+/* img */
+
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.profile-picture {
+    max-width: 12%;
+    height: auto;
+    border-radius: 10%;
+}
+
+/* Navigation styles */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+nav a {
+    display: block;
+
+}
+
+a {
+    color: #007bff;
+    /* Link color */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+/* Main section styles using CSS Grid */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column layout */
+    gap: 20px;
+}
+
+/* Card styles */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Remove bullets for the course links list */
+.card ul {
+    list-style-type: none;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#copyright,
+div {
+    margin-bottom: 10px;
+}
+
+/* Add more styles as needed */

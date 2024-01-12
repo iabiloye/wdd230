@@ -1,59 +1,89 @@
+<!--ABILOYE-->
+<!--INDEX FILE-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abiloye Iyanuoluwa John - wdd230</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
+    <title> Abiloye Iyanuoluwa John - WDD230 - Web Frontend Development </title>
+    <meta name="author" content=" Abiloye Iyanuoluwa John" />
+    <meta name="description"
+        content="Assignment portal for Abiloye Iyanuluwa in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
 
-        header, section, footer {
-            margin-bottom: 20px;
-        }
-
-        h1, h2 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/medium.css"> -->
+    <link rel="stylesheet" href="styles/base.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
 </head>
+
 <body>
 
-    <header>
-        <h1>Welcome to My Web Page</h1>
+    <header class="header">
+        <h1>Abiloye Iyanuoluwa John</h1>
+        <img class="profile-picture" src="images/abiloyepr.jpg" alt="Abiloye Iyanuoluwa Profile Picture">
     </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Hello, I am Abiloye Iyanuoluwa John. Currently a Brigham Young University student Major In Applied Technology.</p>
-    </section>
+    <nav>
+        <a href="#/">Home</a>
+        <a href="lesson/chamber-site-plan.html">Site Plan</a>
+        <a href="chamber/">Chamber</a>
+        <a href="https://www.byui.edu">BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+    </nav>
 
-    <section>
-        <h2>Education</h2>
-        <p>I am pursuing my studies in Web Development and Computer Programming.</p>
-    </section>
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <section class="Card">
+            <h3>Learning Activities</h3>
+            <ul>
+                <li>Lesson 2: <a href="lesson2/design-principles.html">Design Principles</a></li>
+                <li>Lesson 3: <a href="lesson3/index.html">Chamber of Commerce Site Plan</a></li>
+                <li>Lesson 4: <a href="mychamber/index.html">Chamber Website Home Page</a></li>
+                <li>Lesson 5: <a href="lesson5/bom.html">Book of Mormon- Top 25</a></li>
+                <li>Lesson 6: <a href="mychamber/index.html">Chamber of Commerce Home Page</a></li>
+                <li>Lesson 7: <a href="lesson7/lazyload.html">Progressive Loading of Images</a> and
+                    <a href="mychamber/discovery.html">Chamber Discover Page</a>
+                </li>
+                <li>Lesson 8: <a href="lesson8/tablebuild.html">Table Build</a> and
+                    <a href="mychamber/join.html">Chamber Join Page</a>
+                </li>
+                <li>Lesson 9: <a href="lesson9/prophets.html">Prophet Card Page</a> and
+                    <a href="mychamber/directory.html">Chamber Directory Page</a>
+                </li>
+                <li>Lesson 10: <a href="lesson10/weather-api.html">Weather API Activity</a> and <a
+                        href="mychamber/index.html">Chamber Home Page</a></li>
+                <li>Lesson 11: <a href="mychamber/index.html">Chamber of Commerce Completed Website</a></li>
+            </ul>
+            <i>Some Lesson may need more than one Activity/Assignment link</i>
+        </section>
 
-    <section>
-        <h2>Interests</h2>
-        <p>Aside from web development, I have a keen interest in coding, and exploring new technologies. In my free time, I enjoy reading, chatting, and experimenting with new recipes.</p>
-    </section>
 
-    <section>
-        <h2>Contact Information</h2>
-        <p>Email: iabiloye@gmail.com</p>
-        <p>LinkedIn: linkedin.com/in/abiloye</p>
-        <p>GitHub: github.com/iabiloye</p>
-    </section>
+        <section class="card">
+            <h3>Information</h3>
+            <p>Weather: Sunny</p>
+            <p>Number of visits: 100</p>
+            <!-- more placeholder -->
+        </section>
 
-    <footer>
-        <p>&copy; 2024 | Abiloye Iyanuoluwa John | wdd230</p>
+    </main>
+
+    <footer class="footer">
+        <div id="copyright">
+            <p>&copy; <span id="currentYear"></span> | Abiloye Iyanuluwa John | Nigeria | <a
+                    href="https://www.byui.edu/online">BYU-I Online Learning</a></p>
+        </div>
+        <div>
+            <p> Last updated: <span id="lastModified"></span></p>
+        </div>
+        <script src="js/current_year_script.js"></script>
+        <script src="js/date_modified.js"></script>
     </footer>
 
+
 </body>
+
 </html>
