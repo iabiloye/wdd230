@@ -7,28 +7,25 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Calabar Chamber of Commerce </title>
+    <title> Abiloye Iyanuoluwa John - WDD 230 - Web Frontend Development </title>
     <meta name="author" content=" Abiloye Iyanuoluwa John" />
-    <meta name="description" content=" Calabar Chamber of Commerce - Home Page - WDD 230 " />
+    <meta name="description" content=" WDD 230 Abiloye Iyanuoluwa John : Course Assignment Portal" />
 
 
-    <meta property="og:title" content="Calabar Chamber of Commerce" />
+    <meta property="og:title" content="WDD 230 - Web Frontend Development" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content=" Calabar Chamber of Commerce - Home Page - WDD 230 " />
     <meta property="og:url" content="https://iabiloye.github.io/wdd230/" />
     <meta property="og:image" content="https://raw.githubusercontent.com/iabiloye/wdd230/main/images/abiloyepr.jpg" />
-    <!-- <meta property="og:site_name" content="Calabar Chamber of Commerce"> -->
-
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 
+    <!-- <link rel="stylesheet" href="css/medium.css"> -->
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
-
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
 
     <link rel="icon" href="favicon.ico">
 
@@ -36,36 +33,132 @@
 
 <body>
 
-    <header class="header">
-
+    <header>
+        <img class="logo" src="chamber/images/logo.png" alt="logo">
+        <h1>Calabar Chamber of Commerce</h1>
     </header>
+    <button id="menu"> </button>
 
-    <nav>
+    <nav class="navigation">
+        <a href="#" class="active">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
 
     </nav>
+    <div class="hero-box">
+        <img id="hero-img" src="chamber/images/hero.webp" alt="hero image">
+        <button class="call-to-action">Join Us</button>
+    </div>
 
     <main>
-        <h2>WDD 230: Web Frontend Development</h2>
+        <section class="events">
+            <h2>Events</h2>
+            <h3>Help Standard Companies Recruit Top Talent</h3>
+            <p>There were eleven thousand open jobs in the Calabar, Nigeria by December 2023.
+                Similar work shortages are rising globally. One of the best ways you can support your chamber members
+                is to help build or refresh their job boards.
+            </p>
+            <p>LOcate Us.</p>
 
-
-        <section class="card">
-            <h3>Information</h3>
-            <p>Weather: Sunny</p>
-            <p>Number of visits: 13</p>
-            <!-- more placeholder -->
         </section>
+
+        <section class="weather">
+            <h3>Weather</h3>
+            <!-- <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            </p> -->
+            <div class="weather-info">
+                <img src="" id="weather-icon" alt="weather icon">
+                <h3><span id="temp-value"></span>&deg;C</h3>
+            </div>
+            <p id="weather-desc"></p>
+            <hr>
+            <div class="wind-speed">
+                <p>Wind Speed: </p>
+                <p><span id="wind-speed-value"></span>km/h</p>
+            </div>
+            <div class="wind-chill">
+                <p>Wind Chill:</p>
+                <p id="wind-chill-display"> </p>
+            </div>
+
+        </section>
+
+        <div id="join">
+            <h2><a href="join.html">Join Us!</a> </h2>
+            <p>Discover how to join the Calabar Chamber of
+                Commerce and how it can work for you!</p>
+        </div>
+
+        <section class="job_search">
+            <h3>Job Search</h3>
+            <div>
+                <h4>Job Search</h4>
+                <img src="images/job.jpg" alt="My Job Search">
+                <p>Find the best Job Opportunity on our site</p>
+                <section>
+                    <p>+234-90-6707-2323</p>
+                    <p>2210 Plaza Drive, Ste 150 <a></a></p>
+                </section>
+
+            </div>
+        </section>
+
+        <section class="food">
+            <div>
+                <h3>Food</h3>
+                <img src="images/food.jpg" alt="Food Hunt">
+                <p>Find the best hot delicacy of African dishes.</p>
+                <section>
+                    <p>+234-8067072323</p>
+                    <p>Carteen Hall<a></a></p>
+                </section>
+            </div>
+        </section>
+
+        <section class="tech">
+            <div>
+
+                <h4>Tech</h4>
+                <img src="images/iphone.jpg" alt="Tech Shop">
+                <p>Tech Opportunity</p>
+                <section>
+                    <p>Office 5<a></a></p>
+                </section>
+            </div>
+        </section>
+
 
     </main>
 
     <footer class="footer">
-        <div id="copyright">
-            <p>&copy; <span id="copyrightYear"></span> | Abiloye Iyanuluwa John | Nigeria | <a
-                    href="https://www.byui.edu/online">BYU-I Online Learning</a></p>
+
+        <div class="footer1">
+            <img src="images/logo.png" alt="IQweet Chamber of Commerce Logo">
+            <h1>IQweet Chamber of Commerce</h1>
+            <p id="p1"><i>Ndidem Usang Iso Rd, Leopad Town 540281,</i></p>
+            <p id="p2"><i>Calabar, Cross River</i></p>
         </div>
-        <div>
-            <p> Last Modificaion: <span id="lastModified"></span></p>
-        </div>
-        <script src="scripts/getdates.js"></script>
+        <div class="footer2">
+            <p>info@IQweet.org</p>
+            <p>+2349(0)9067072323</p>
+            <p><a href="https://goo.gl/maps/JghALKhKGBEYLbPJ8"> 📍 Direction</a> </p>
+            <div class="footer3">
+                <p>©<span id="copyrightyear"></span>Calabar Chamber of Commerce|| Abiloye Iyanuoluwa John || WDD 230
+                    Project
+                <p> Last Modificaion: <span id="lastModified"></span></p>
+                <p>Weather Data Provided by:<a href="https://openweathermap.org/city/2346229"> Open Weather Map</a> </p>
+            </div>
+            <script src="chamber/scripts/getdates.js"></script>
+            <script src="chamber/scripts/chamber.js"></script>
+            <script src="chamber/scripts/responsiveMenu.js"></script>
+            <script src="chamber/scripts/weatherapi.js"></script>
+            <script src="chamber/scripts/spotlight.js"></script>
+            <script src="chamber/scripts/windchill.js"></script>
+
     </footer>
 
 
