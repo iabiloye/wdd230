@@ -1,0 +1,110 @@
+/* base.css */
+
+/* default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    /* Default text color */
+    background-color: #ffffff;
+    /* Default background color */
+}
+
+/* Header styles */
+header {
+    align-items: center;
+    background-color: #114c50;
+    color: white;
+    padding: 10px;
+    border-radius: 1px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+
+/* Navigation styles */
+nav {
+    text-align: center;
+    background-color: #114c50;
+    /* Ensure navigation bar is always visible */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background-color: #096c76;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main img {
+    max-width: 200%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 400px;
+
+}
+
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    background-color: #114c50;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+#copyright,
+div {
+    margin-bottom: 10px;
+}
+
+#dateModified {
+    color: #000000;
+}
+
+#copyright a {
+    color: black;
+}
+
+/* Add more styles as needed */
