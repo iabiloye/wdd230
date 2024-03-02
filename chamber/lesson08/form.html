@@ -1,0 +1,132 @@
+<!--ABILOYE-->
+<!--INDEX FILE-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chamber of Commerce </title>
+    <meta name="author" content=" Abiloye Iyanuoluwa John" />
+    <meta name="description" content=" WDD 230 Abiloye Iyanuoluwa John : Calabar Chamber of Commerce" />
+
+
+    <meta property="og:title" content="WDD 230 - Web Frontend Development" />
+    <meta property="og:type" content="city" />
+    <meta property="og:url" content="https://iabiloye.github.io/wdd230/" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/iabiloye/wdd230/main/images/abiloyepr.jpg" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/medium.css"> -->
+    <!-- <link rel="stylesheet" href="styles/base.css"> -->
+    <link rel="stylesheet" href="styles/form.css">
+    <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+
+    <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="images/logo.png" alt="logo">
+        <h1>Calabar: Chamber of Commerce</h1>
+    </header>
+    <button id="menu"> </button>
+
+    <nav class="navigation">
+        <a href="#" class="active">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+
+    </nav>
+    <!-- <div class="hero-box">
+        <img id="hero-img" src="images/hero.webp" alt="hero image">
+        <button class="call-to-action">Join Us</button>
+    </div> -->
+    <!-- <div class="hero-box">
+        <picture>
+            <source srcset="images/wdd230large.jpg" media="(max-width: 343px)" sizes="(max-width: 343px) 100vw, 343px">
+            <source srcset="images/wdd230medium.jpg" media="(min-width: 810px)" sizes="(min-width: 810px) 50vw, 810px">
+            <img src="images/wdd230small.jpg" alt="hero-image" width="1200" height="853">
+        </picture>
+    </div> -->
+
+
+
+    <!-- <div id="mode">
+        🕶️
+    </div> -->
+
+    <main>
+
+        <body>
+            <form action="record.html" method="get">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required pattern="Accounting123@">
+                </div>
+                <div>
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required pattern="abiloyepr@byui.edu"
+                        title="A valid byui.edu email address.">
+                </div>
+                <div>
+                    <label for="page_rating">Page Rating:</label>
+                    <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1"
+                        onchange="document.getElementById('rating_value').innerText = this.value;">
+                    <span id="rating_value">1</span>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </body>
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer1">
+            <img src="images/logo.png" alt="IQweet Chamber of Commerce Logo">
+            <h1>Calabar Chamber of Commerce</h1>
+            <p id="p1"><i>Ndidem Usang Iso Rd, Leopad Town 540281,</i></p>
+            <p id="p2"><i>Calabar, Cross River</i></p>
+        </div>
+        <div class="footer2">
+            <p>info@IQweet.org</p>
+            <p>+2349(0)9067072323</p>
+            <p><a href="https://goo.gl/maps/JghALKhKGBEYLbPJ8"> 📍 Direction</a> </p>
+            <div class="footer3">
+                <p>©<span id="copyrightyear"></span>Calabar Chamber of Commerce || Abiloye Iyanuoluwa John || WDD 230
+                    Project
+                <p> Last Modificaion: <span id="lastModified"></span></p>
+                <p>Weather Data Provided by:<a href="https://openweathermap.org/city/2346229"> Open Weather Map</a> </p>
+            </div>
+            <script src="scripts/getdates.js"></script>
+            <script src="scripts/darkmode.js"></script>
+            <script src="form-validation.js"></script>
+
+            <!-- <script src="scripts/responsiveMenu.js"></script>
+            <script src="scripts/weatherapi.js"></script>
+            <script src="chamber/scripts/spotlight.js"></script>
+            <script src="chamber/scripts/windchill.js"></script> -->
+
+    </footer>
+
+
+</body>
+
+</html>
