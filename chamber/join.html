@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join IQweet Chamber</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css"> <!-- Add your custom CSS file for styling -->
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="images/logo.png" alt="logo">
+        <h1>Calabar: Chamber of Commerce</h1>
+    </header>
+    <button id="menu"> </button>
+
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="#" class="active">Join</a>
+    </nav>
+
+    <main>
+        <h1>Join IQweet Chamber</h1>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Application Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="1234567890"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label class="top">Website <input type="url" name="url" placeholder="http://"></label>
+                <label class="top">Business Name <input type="text" name="bname" placeholder="IQweet Chamber"
+                        required></label>
+                <label class="top">Date <input type="date" name="formdate" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+                <div>Your Choosing</div>
+                <label class="sbs"><input type="radio" name="membership" value="non-profit"> NP Membership - No fee
+                    applicable</label>
+                <p>NP Membership is for non-profit organizations and there is no fee</p>
+                <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                <p>#13,000 per Quarter</p>
+                <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                <p>#28,000 per Quarter</p>
+                <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                <p>#43,000 per Quarter</p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Business Description</legend>
+                <textarea name="description" rows="3"></textarea>
+                <p>Please describe your business in detail. You can also include how we can be of support.</p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Term and Conditions</legend>
+                <label class="top"><input type="checkbox" name="agreeconditions" required> I fully read and agree to the
+                    terms and conditions of IQweet Chamber of Commerce.</label>
+            </fieldset>
+
+            <input class="button" type="submit" value="Apply to IQweet">
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer1">
+            <img src="images/logo.png" alt="IQweet Chamber of Commerce Logo">
+            <h1>Calabar Chamber of Commerce</h1>
+            <p id="p1"><i>Ndidem Usang Iso Rd, Leopad Town 540281,</i></p>
+            <p id="p2"><i>Calabar, Cross River</i></p>
+        </div>
+        <div class="footer2">
+            <p>info@IQweet.org</p>
+            <p>+2349(0)9067072323</p>
+            <p><a href="https://goo.gl/maps/JghALKhKGBEYLbPJ8"> 📍 Direction</a></p>
+            <div class="footer3">
+                <p>©<span id="copyrightyear"></span>Calabar Chamber of Commerce || Abiloye Iyanuoluwa John || WDD 230
+                    Project</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+                <p>Weather Data Provided by:<a href="https://openweathermap.org/city/2346229"> Open Weather Map</a></p>
+            </div>
+            <script src="scripts/getdates.js"></script>
+            <script src="scripts/darkmode.js"></script>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+```
