@@ -1,0 +1,41 @@
+:root {
+    --primary-color: #114c50;
+}
+
+table {
+    font-family: 'Quicksand', sans-serif;
+    width: 70%;
+    border: var(--primary-color) solid 1px;
+    margin: 10% auto;
+    border-collapse: collapse;
+    caption-side: top;
+}
+
+.table-heading {
+    font-size: 1.1rem;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-shadow: #161616;
+}
+
+.main-title {
+    padding: 30px;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.tfoot-phrase {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(226, 220, 216, 0.735);
+}
+
+#no_data {
+    background-color: #000000;
+}
