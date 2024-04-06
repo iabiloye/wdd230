@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+}
+
+#home {
+    background-color: #f4f4f4;
+}
+
+#rentals {
+    background-color: #ddd;
+}
+
+
+#reservations {
+    background-color: #f4f4f4;
+}
+
+#contact {
+    background-color: #ddd;
+}
+
+
+#weather {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    nav {
+        grid-column: 1 / span 1;
+    }
+
+    section {
+        grid-column: 1 / span 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+    }
+
+    nav {
+        grid-column: 1 / span 4;
+    }
+
+    section {
+        grid-column: span 2;
+    }
+
+    #weather {
+        grid-column: span 2;
+    }
+}
