@@ -34,11 +34,25 @@
 
 <body>
 
-    <!-- <header>
-        <img class="logo" src="images/logo.png" alt="logo">
-        <h1> ~Scoots~ </h1>
+    <div class="closeable-message">
+        <p>Today's high temperature: <span id="high-temperature"></span></p>
+        <button onclick="closeMessage()">Close</button>
+    </div>
+
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Scoots Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <button id="menu"> </button> -->
 
     <nav class="navigation">
         <ul>
@@ -50,21 +64,63 @@
     </nav>
 
 
+    <!-- Reservations Page -->
     <section id="reservations">
         <h2>Reservations</h2>
-        <p>Rental agreement information goes here.</p>
-        <!-- Reservation Form -->
-        <form action="#" method="post">
-            <!-- Form fields go here -->
-        </form>
+        <div class="reservation-form">
+            <form action="submit_reservation.php" method="post">
+                <label for="rental-type">Rental Type:</label>
+                <select id="rental-type" name="rental-type">
+                    <option value="Honda Metropolitan (49cc)">Honda Metropolitan (49cc) - 1 person</option>
+                    <option value="Honda Dio (110cc)">Honda Dio (110cc) - 2 person</option>
+                    <option value="Honda PCX150 (149cc)">Honda PCX150 (149cc) - 2 person</option>
+                    <option value="Honda Pioneer 1000">Honda Pioneer 1000 - 4 person</option>
+                    <option value="Jeep Wrangler - 4 door manual with A/C">Jeep Wrangler - 4 door manual with A/C - 5
+                        person</option>
+                    <option value="Jeep Wrangler - 2 door - open air - manual">Jeep Wrangler - 2 door - open air -
+                        manual - 4 person</option>
+                </select><br><br>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <label for="period">Period:</label>
+                <input type="text" id="period" name="period" placeholder="e.g., Half Day or Full Day" required><br><br>
+
+                <label for="number-of-people">Number of People:</label>
+                <input type="number" id="number-of-people" name="number-of-people" required><br><br>
+
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" name="phone-number" required><br><br>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="state-or-country">Home State or Country:</label>
+                <input type="text" id="state-or-country" name="state-or-country" required><br><br>
+
+                <label for="cruise-line">Cruise Line (if applicable):</label>
+                <input type="text" id="cruise-line" name="cruise-line"><br><br>
+
+                <label for="special-accommodations">Special Accommodations/Comments:</label><br>
+                <textarea id="special-accommodations" name="special-accommodations" rows="4"
+                    cols="50"></textarea><br><br>
+
+                <input type="submit" value="Submit Reservation">
+            </form>
+        </div>
     </section>
+
 
     </main>
 
     <footer class="footer">
 
         <div class="footer1">
-            <img src="images/logo.png" alt="🛵 motor scooter rental company">
+            <img src="images/logo.jpg" alt="🛵 motor scooter rental company">
             <h1> ~Scoots~ </h1>
             <p id="p1"><i> Quintana Roo, Mexico </i></p>
 

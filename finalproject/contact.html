@@ -34,11 +34,25 @@
 
 <body>
 
-    <!-- <header>
-        <img class="logo" src="images/logo.png" alt="logo">
-        <h1> ~Scoots~ </h1>
+    <div class="closeable-message">
+        <p>Today's high temperature: <span id="high-temperature"></span></p>
+        <button onclick="closeMessage()">Close</button>
+    </div>
+
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Scoots Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <button id="menu"> </button> -->
 
     <nav class="navigation">
         <ul>
@@ -49,17 +63,38 @@
         </ul>
     </nav>
 
-
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Essential contact information.</p>
-        <!-- Embedded Google Map -->
-        <div id="map"></div>
-        <!-- Contact Form -->
-        <form action="#" method="post">
-            <!-- Form fields go here -->
-        </form>
+        <div class="contact-info">
+            <p>For inquiries or assistance, please contact us:</p>
+            <ul>
+                <li>Phone: +234-9067-07-2323</li>
+                <li>Email: info@scootsrental.com</li>
+                <li>Address: 13 Main Street, Cozumel, Mexico</li>
+            </ul>
+        </div>
+        <div id="map">
+            <p><a
+                    href="https://www.google.com/maps/place/Cozumel/@20.4255199,-87.0284159,11z/data=!4m6!3m5!1s0x8f4ef8efb0d19327:0x342ebcae5c018bfc!8m2!3d20.4229839!4d-86.9223432!16zL20vMDFibmQ3?entry=ttu">
+                    📍 Direction</a> </p>
+        </div>
+        <div class="contact-form">
+            <h3>Send us a message</h3>
+            <form action="submit_contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
     </section>
+
 
 
 
@@ -68,7 +103,7 @@
     <footer class="footer">
 
         <div class="footer1">
-            <img src="images/logo.png" alt="🛵 motor scooter rental company">
+            <img src="images/logo.jpg" alt="🛵 motor scooter rental company">
             <h1> ~Scoots~ </h1>
             <p id="p1"><i> Quintana Roo, Mexico </i></p>
 

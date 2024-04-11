@@ -33,39 +33,61 @@
 </head>
 
 <body>
-
-    <!-- <header>
-        <img class="logo" src="images/logo.png" alt="logo">
-        <h1> ~Scoots~ </h1>
-    </header>
-    <button id="menu"> </button> -->
-
-    <nav class="navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="rentals.html">Rentals</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="closeable-message">
+        <p>Today's high temperature: <span id="high-temperature"></span></p>
+        <button onclick="closeMessage()">Close</button>
+    </div>
 
 
-    <section id="home">
-        <h1>Welcome to ~Scoots~</h1>
-        <p>A motor scooter rental company on the island of Cozumel.</p>
-        <p>Call to action to make a reservation.</p>
-        <p>Summary information about rentals.</p>
-        <!-- Weather Information -->
-        <div id="weather">
-            <h2>Weather</h2>
-            <p>Current Temperature: <span id="current-temperature"></span></p>
-            <p>Current Humidity: <span id="current-humidity"></span></p>
-            <p>Next Day's Forecasted Temperature: <span id="next-day-temperature"></span></p>
-            <p>Weather Description: <span id="weather-description"></span></p>
-            <img src="" alt="Weather Icon" id="weather-icon">
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Scoots Logo">
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Welcome to ~Scoots~</h1>
+        <p>Your adventure starts here!</p>
+        <a href="reservations.html" class="btn">Make a Reservation</a>
     </section>
 
+    <!-- Summary information about rentals -->
+    <section id="rental-summary">
+        <h2>Explore Our Rentals</h2>
+        <p>We offer a variety of rental options to suit your needs:</p>
+        <ul>
+            <li>Honda Motor Scooters</li>
+            <li>Side-by-Side ATVs</li>
+            <li>Jeeps</li>
+        </ul>
+    </section>
+
+    <!-- Social media links -->
+    <section id="social-media">
+        <h2>Connect with Us</h2>
+        <p>Follow us on social media for updates and promotions:</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </section>
+
+    <!-- Weather information -->
+    <section id="weather">
+        <h2>Weather Forecast</h2>
+        <div id="weather-info">
+            <!-- Weather data will be displayed here dynamically -->
+        </div>
+    </section>
 
 
     </main>
@@ -73,7 +95,7 @@
     <footer class="footer">
 
         <div class="footer1">
-            <img src="images/logo.png" alt="🛵 motor scooter rental company">
+            <img src="images/logo.jpg" alt="🛵 motor scooter rental company">
             <h1> ~Scoots~ </h1>
             <p id="p1"><i> Quintana Roo, Mexico </i></p>
 
@@ -92,10 +114,10 @@
             <script src="scripts/getdates.js"></script>
             <script src="scripts/darkmode.js"></script>
             <script src="scripts/weatherapi.js"></script>
-            <!-- <script src="scripts/responsiveMenu.js"></script>
-            <script src="scripts/weatherapi.js"></script>
+            <script src="scripts/closemasage.js"></script>
+            <!-- <script src="scripts/weatherapi.js"></script>
             <script src="chamber/scripts/spotlight.js"></script>
-            <script src="chamber/scripts/windchill.js"></script> -->
+            <script src="chamber/scripts/windchill.js"></script> --> -->
 
     </footer>
 

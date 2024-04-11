@@ -34,6 +34,79 @@ section {
     background-color: #f4f4f4;
 }
 
+/* Base Styles */
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo img {
+    width: 100px;
+    /* Adjust the width of the logo as needed */
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer1 img {
+    width: 100px;
+    /* Adjust the width of the logo in the footer as needed */
+    height: auto;
+}
+
+.closeable-message {
+    background-color: #ffe4c4;
+    /* Light coral */
+    color: #333;
+    /* Dark gray */
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.closeable-message p {
+    margin: 0;
+}
+
+.closeable-message button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    /* Gray */
+}
+
 #rentals {
     background-color: #ddd;
 }
